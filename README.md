@@ -1,5 +1,3 @@
-
-
 🎬 Movie Recommender System
 This is a content-based movie recommendation system that suggests movies based on user-selected industry (Bollywood or Hollywood) and genre (e.g., Action, Romance, Thriller). It uses TF-IDF vectorization and cosine similarity to find and recommend similar films based on movie descriptions.
 
