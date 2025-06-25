@@ -1,75 +1,73 @@
-🎬 Movie Recommender System
-This is a content-based movie recommendation system that suggests movies based on user-selected industry (Bollywood or Hollywood) and genre (e.g., Action, Romance, Thriller). It uses TF-IDF vectorization and cosine similarity to find and recommend similar films based on movie descriptions.
+# Task 3 - Movie Recommender 🎬📽️
 
-💡 Features
-🎯 Smart filtering by industry & genre
+This is a **content-based movie recommender system** created using Python. It suggests similar movies based on **user-selected genre and industry** (Bollywood / Hollywood) using **TF-IDF vectorization** and **cosine similarity**. The user can also request more recommendations like a specific movie from the list.
 
-🎯 "More like this" recommendations based on selected movie
+---
 
-🧠 TF-IDF for text vectorization
+## 💡 Features
 
-📐 Cosine similarity to measure closeness of movie plots
+- 🎯 Smart filtering by industry & genre  
+- 🎯 "More like this" recommendations on selected movies  
+- 🧠 TF-IDF vectorization of movie descriptions  
+- 📐 Cosine similarity for finding closeness between plots  
+- 💬 Interactive terminal-based experience  
+- ♻️ Option to continue exploring recommendations in-depth  
 
-📂 Handles user queries interactively in the terminal
+---
 
-🛠️ Tech Stack
-Python
+## 📁 Files Included
 
-pandas
+- `movie_recommender.py` – Main Python script  
+- `movies.csv` – Dataset containing titles, genres, descriptions, and industries  
+- `README.md` – Project overview and usage guide  
 
-scikit-learn (TF-IDF & Cosine Similarity)
+---
 
-📁 Dataset
-The dataset (movies.csv) should contain the following columns:
+## ▶️ How to Run
 
-title: Movie name
+1. Ensure Python is installed (preferably version 3.6+)
+2. Install dependencies using:
+   ```bash
+   pip install pandas scikit-learn
+Make sure movies.csv is in the correct path or adjust the file path in the script.
 
-description: Short plot/summary
+Open terminal or command prompt
 
-genre: Movie genre(s)
-
-industry: Movie industry (e.g., Bollywood, Hollywood)
-
-🚀 How to Run
-Make sure required libraries are installed:
-
-bash
-Copy
-Edit
-pip install pandas scikit-learn
-Place movies.csv in the same folder or update the path accordingly in the code.
-
-Run the Python file:
+Run the recommender using:
 
 bash
 Copy
 Edit
 python movie_recommender.py
-Follow the interactive prompts to get movie recommendations.
-
-📌 Example Interaction
+💬 Example Conversation
 markdown
 Copy
 Edit
 🎬 Welcome to the Movie Recommender!
 
-👉 Choose Industry (Bollywood / Hollywood): Bollywood
-🎭 Choose Genre (e.g., Action, Romance, Thriller, Drama, Comedy): Action
+👉 Choose Industry (Bollywood / Hollywood): Hollywood
+🎭 Choose Genre (e.g., Action, Romance, Thriller, Drama, Comedy): Sci-Fi
 
 ✅ Recommended movies for your preferences:
 
-1. War
-2. RRR
-3. Don
-4. Baaghi
-5. Simmba
+1. Interstellar
+2. Inception
+3. The Matrix
+4. Avatar
+5. Tenet
 
   Want more like one of these? Type number (1–5) or 'no' to stop:
-🎬 Your choice: 1
+🎬 Your choice: 2
 
-🧠 More movies like *War*:
+🧠 More movies like *Inception*:
 
-1. Ek Tha Tiger
-2. Bang Bang
-3. Pathaan
-...
+1. Tenet
+2. Shutter Island
+3. The Prestige
+4. Interstellar
+5. Source Code
+
+🔁 Do you want to try a different industry or genre? (yes/no)
+🔄 Your choice: no
+
+👋 Thanks for using the Movie Recommender!
